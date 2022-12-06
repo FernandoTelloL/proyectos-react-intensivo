@@ -1,14 +1,16 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import './App.css';
+import { MyRoutes } from './routers/MyRoutes';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <header>
-      <h1 className='title'>Películas</h1>
-    </header>
+    <div>
+      <header>
+        <h1 className='title'>Películas</h1>
+      </header>
+      <MyRoutes />
+    </div>
   );
 }
 
